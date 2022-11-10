@@ -10,7 +10,7 @@ COPY src /app/src
 # sets app as the directory into the app
 WORKDIR /app/
 # run mvn
-RUN mvn clean install -P staging
+RUN mvn clean install
 
 
 FROM openjdk:11.0.12-jdk
